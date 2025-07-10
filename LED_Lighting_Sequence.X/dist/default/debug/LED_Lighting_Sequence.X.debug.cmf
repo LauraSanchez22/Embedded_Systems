@@ -1,0 +1,371 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug\LED_Lighting_Sequence.X.debug.o
+cinit CODE 0 B66 B66 6 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 802 802 364 1 2
+cstackCOMRAM COMRAM 1 1 1 6 1 1
+smallconst SMALLCONST 0 800 800 2 1 2
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 7FFC 7FFC 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F60-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7FF 1
+CONST B6C-7FFB 1
+SMALLCONST B6C-7FFB 1
+CODE 4-7FF 1
+CODE B6C-7FFB 1
+BIGRAM 7-7FF 1
+BIGSFR F60-FFF 1
+COMRAM 7-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST B6C-7FFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\LED_Lighting_Sequence.X.debug.o
+802 text0 CODE >79:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+802 text0 CODE >83:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+806 text0 CODE >86:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+808 text0 CODE >87:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+80A text0 CODE >88:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+80C text0 CODE >89:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+80E text0 CODE >91:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+810 text0 CODE >92:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+812 text0 CODE >97:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+820 text0 CODE >100:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+822 text0 CODE >103:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+826 text0 CODE >104:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+83E text0 CODE >107:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+842 text0 CODE >108:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+85A text0 CODE >111:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+85E text0 CODE >112:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+876 text0 CODE >115:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+87A text0 CODE >116:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+892 text0 CODE >119:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+896 text0 CODE >120:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+8AE text0 CODE >123:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+8B2 text0 CODE >124:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+8CA text0 CODE >127:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+8CE text0 CODE >128:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+8E6 text0 CODE >131:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+8EA text0 CODE >132:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+902 text0 CODE >133:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+918 text0 CODE >135:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+926 text0 CODE >138:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+928 text0 CODE >141:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+92C text0 CODE >142:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+944 text0 CODE >145:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+948 text0 CODE >146:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+960 text0 CODE >149:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+964 text0 CODE >150:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+97C text0 CODE >153:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+980 text0 CODE >154:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+998 text0 CODE >157:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+99C text0 CODE >158:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+9B4 text0 CODE >161:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+9B8 text0 CODE >162:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+9D0 text0 CODE >165:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+9D4 text0 CODE >166:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+9EC text0 CODE >169:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+9F0 text0 CODE >170:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A08 text0 CODE >171:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A1E text0 CODE >173:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A2C text0 CODE >176:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A2E text0 CODE >179:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A32 text0 CODE >180:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A4A text0 CODE >183:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A4E text0 CODE >184:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A66 text0 CODE >187:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A6A text0 CODE >188:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A82 text0 CODE >191:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A86 text0 CODE >192:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+A9E text0 CODE >194:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+AA2 text0 CODE >195:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+ABA text0 CODE >197:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+ABE text0 CODE >198:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+AD6 text0 CODE >200:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+AE8 text0 CODE >201:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+AEC text0 CODE >202:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+B04 text0 CODE >203:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+B08 text0 CODE >205:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+B16 text0 CODE >206:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+B18 text0 CODE >207:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+B1C text0 CODE >208:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+B32 text0 CODE >209:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+B36 text0 CODE >210:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+B4C text0 CODE >211:D:\COPIA DE MAPLABXProjects\LED_Lighting_Sequence.X\LedsON.c
+B66 cinit CODE >511:C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_1.s
+B66 cinit CODE >513:C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_1.s
+B66 cinit CODE >516:C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_1.s
+B66 cinit CODE >522:C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_1.s
+B66 cinit CODE >524:C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_1.s
+B68 cinit CODE >525:C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hspace_0 8000 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hspace_1 7 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hspace_2 0 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__mediumconst 800 0 SMALLCONST 0 smallconst dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/debug\LED_Lighting_Sequence.X.debug.o
+main@i 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\LED_Lighting_Sequence.X.debug.o
+_LATB F8A 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+_main 802 0 CODE 0 text0 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+___stack_hi 0 0 STACK 2 stack C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+start 7FFC 0 CODE 0 init C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__accesstop 60 0 ABS 0 - C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\LED_Lighting_Sequence.X.debug.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hintcodelo 18 0 CODE 0 intcodelo dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/debug\LED_Lighting_Sequence.X.debug.o
+start_initialization B66 0 CODE 0 cinit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\LED_Lighting_Sequence.X.debug.o
+_TRISDbits F95 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+___rparam_used 1 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+isa$xinst 0 0 ABS 0 - C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hconst 0 0 CONST 0 const dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hidata 0 0 CODE 0 idata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hstack 0 0 STACK 2 stack dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Htext0 0 0 ABS 0 text0 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__smallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hcomram 0 0 ABS 0 comram dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lconst 0 0 CONST 0 const dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lidata 0 0 CODE 0 idata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lstack 0 0 STACK 2 stack dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\LED_Lighting_Sequence.X.debug.o
+_PORTDbits F83 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hdata 0 0 ABS 0 data dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hheap 0 0 HEAP 7 heap dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hinit 8000 0 CODE 0 init dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Htemp 0 0 COMRAM 1 temp dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Htext 0 0 ABS 0 text dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Ldata 0 0 ABS 0 data dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lheap 0 0 HEAP 7 heap dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Linit 7FFC 0 CODE 0 init dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Ltext 0 0 ABS 0 text dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hintret 0 0 ABS 0 intret dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__S0 8000 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__S1 7 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__S4 0 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__S5 0 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lintentry 0 0 ABS 0 intentry dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__activetblptr 0 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lcomram 0 0 ABS 0 comram dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lconfig 0 0 CONFIG 4 config dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lsivt_hi 0 0 CODE 0 sivt_hi dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lsivt_lo 18 0 CODE 0 sivt_lo dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\LED_Lighting_Sequence.X.debug.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+main@i_178 4 0 COMRAM 1 cstackCOMRAM dist/default/debug\LED_Lighting_Sequence.X.debug.o
+main@i_179 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\LED_Lighting_Sequence.X.debug.o
+main@i_180 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+isa$std 1 0 ABS 0 - C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+stackhi 0 0 ABS 0 - C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+__Lintcode 8 0 CODE 0 intcode dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lintret 0 0 ABS 0 intret dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+_ADCON1bits FC1 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lspace_0 0 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lspace_1 0 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lspace_2 0 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lspace_4 0 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\LED_Lighting_Sequence.X.debug.o
+end_of_initialization B66 0 CODE 0 cinit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hintentry 0 0 ABS 0 intentry dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__pcinit B66 0 CODE 0 cinit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__ptext0 802 0 CODE 0 text0 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\LED_Lighting_Sequence.X.debug.o
+___heap_hi 0 0 ABS 0 - C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+___param_bank 0 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\laura\AppData\Local\Temp\xcAsnv4.\driver_tmp_9.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__end_of__initialization B66 0 CODE 0 cinit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__end_of_main B66 0 CODE 0 text0 dist/default/debug\LED_Lighting_Sequence.X.debug.o
+_TRISB F93 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__HRAM 0 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hbss 0 0 RAM 1 bss dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hram 0 0 ABS 0 ram dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__LRAM 1 0 ABS 0 - dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lbss 0 0 RAM 1 bss dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lram 0 0 ABS 0 ram dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hsivt_hi 0 0 CODE 0 sivt_hi dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hsivt_lo 18 0 CODE 0 sivt_lo dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__initialization B66 0 CODE 0 cinit dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hsmallconst 802 0 SMALLCONST 0 smallconst dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\LED_Lighting_Sequence.X.debug.o
+__Hintcode 8 0 CODE 0 intcode dist/default/debug\LED_Lighting_Sequence.X.debug.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text0 0 802 802 36A 1
+cstackCOMRAM 1 1 1 6 1
+init 0 7FFC 7FFC 4 1
+reset_vec 0 0 0 4 1
+smallconst 0 800 800 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
